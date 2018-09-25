@@ -47,7 +47,7 @@ def save_Pandas_DataFrame_to_Excel(vacancies_to_scrape):
 
 # Scrapes preview pages to the Pandas DataFrame
 def scraping_preview_pages(job_id):
-    print('Scraping the vacancy № ' + str(job_id))# + '. Total: ' + str(len(list)))
+    print('Scraping the vacancy № ' + str(job_id))
     link = 'https://api.hh.ru/vacancies/{}'.format(job_id)
     r = requests.get(link)
     data = r.json()
